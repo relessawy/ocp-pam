@@ -8,7 +8,6 @@ import { Router } from '@angular/router';
   templateUrl: './start.component.html'
 })
 export class StartComponent implements OnInit {
-  filename: string;
   selectedLevel;
   data:Array<Object> = [
       {id: 0, name: "Macbook Pro"},
@@ -31,6 +30,7 @@ export class StartComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.selectedLevel.name = "Macbook Pro";
   }
 
 }
