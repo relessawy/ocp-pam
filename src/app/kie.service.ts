@@ -24,10 +24,10 @@ const httpOptions: any = {
 export class KieService {
   constructor(private messageService: MessageService, private http: HttpClient) { }
 
-  startProcess(filename: string): Observable<any> {
+  startProcess(selection: string): Observable<any> {
     const url = `${baseUrl}/server/containers/${containerId}/processes/${processId}/instances`;
     const body = {
-      laptop: filename
+      laptop: selection
     };
     
     return this.http.post<any>(url, body, httpOptions).pipe(

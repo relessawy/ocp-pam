@@ -29,8 +29,6 @@ export class StartComponent implements OnInit {
     alert(this.selectedLevel.name)
   }
 
-  ngOnInit() {
-    this.selectedLevel.name = "Macbook Pro";
-  }
+  ngOnInit() { }
 
 }
